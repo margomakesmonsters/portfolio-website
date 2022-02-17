@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
    <head>
-      <meta charset="utf-8" />
+      <meta charset="utf-8">
       <title>Artonomy</title>
+      <link rel="stylesheet" type="text/css" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
    <body>
       <header>
@@ -18,7 +25,7 @@
          </nav>
       </header>
       <main>
-         <div>
+         <div #id="project">
             <div>
                <h1>Artonomy</h1>
             </div>
@@ -157,11 +164,11 @@
             </div>
          </div>
       </main>
-      <footer>
+      <footer #id="contact">
          <h2>Get in Touch</h2>
          <p>Interested in my work? Call: <a href="tel:+1234567890">+123 4567890</a> or send me an email.</p>
          <div>
-            <a href="mailto:margomurrin@gmail.com">Send Email</a>
+            <a href="mailto:margomurrin@gmail.com" class="button contact">Send Email</a>
          </div>
          <div>
             <ul>
