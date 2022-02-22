@@ -69,11 +69,12 @@ a:hover, a:focus {
   display: inline-block;
  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #9075A9;
+  text-align: center;
   color: #ffffff;
  /* needed to override the default link color */
   font-weight: 200;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 15px;
   border-bottom: 2px solid #53376E;
  /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -139,7 +140,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #9075A9
+  color: #1D023D
 }
 
 #navigation {
@@ -149,6 +150,10 @@ nav > ul > li > a {
 
 #work {
   padding-top: 25px;
+}
+
+#hero span {
+  text-align: center;
 }
 
 .button {
@@ -181,6 +186,28 @@ nav > ul > li > a {
 
 
 
+.resumebutton {
+  justify-content: center;
+  background-color: #dac9eb;
+  color: #dac9eb;
+  text-transform: uppercase;
+  padding: 10px, 20px;
+  border-radius: 20px;
+  color: #dac9eb;
+  border: 2px solid #dac9eb;
+  margin-top: 20px;
+}
+.resumebutton {
+  padding: 10px;
+  border-radius: 20px;
+  color: #dac9eb;
+  margin-top: 20px;
+}
+#container {
+  padding-top: 25px;
+  text-align: center;
+}
+
 #contact {
 padding-top: 50px; 
  text-align: center;
@@ -192,22 +219,31 @@ padding-top: 25px;
 }
 
 #aboutme h2 {
-  padding: 10px;
+  text-align: center;
   padding-top: 50px;
 }
 
 #aboutme p {
-  padding-left: 5px;
-  max-width: 2000px;
+  text-align: center;
+ 
 }
 
 #aboutme h3 {
-  padding-left: 25px
+  text-align: center;
 }
 
 #aboutme ul {
-  padding-left: 50px;
-  max-width: 500px;
+  text-align: center;
+  
+}
+#aboutme .row {
+  display: flex;
+}
+#aboutme .column {
+  flex: 50%;
+  padding: 16px;
+  height: 250px;
+  
 }
 
 /* Project Pages */
