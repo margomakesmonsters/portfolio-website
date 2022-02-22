@@ -3,7 +3,9 @@ colors used:
 Primary color (dark purple): #1D023D
 Secondary color (light purple): #9075A9
 */
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -30,16 +32,16 @@ h2 {
   font-weight: 600;
 }
 h3 {
-  font-size: 1.50em;
-  font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-p {
-  font-size: .75em;
-  font-weight: 200;
+p, ul {
+  font-size: 1.25em;
+  font-weight: 300;
 }
 a {
   color: #9075A9;
@@ -91,4 +93,139 @@ a:hover, a:focus {
 .button.contact:hover {
   background-color: #9075A9;
   color: #ffffff;
+}
+
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #1D023D;
+}
+
+#hero h1 {
+  text-align: center; /*centers text*/
+}
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #dac9eb;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+    
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #9075A9
+}
+
+#navigation {
+  display: inline-block;
+  width: 100%;
+}
+
+#work {
+  padding-top: 25px;
+}
+
+.button {
+  margin-left: 20px;
+}
+
+#hero {
+  background-color: #dac9eb;
+  padding: 20px 0;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+.mypicture {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  max-height: 50%;
+  border-radius: 25px;
+}
+
+
+
+#contact {
+padding-top: 50px; 
+ text-align: center;
+}
+
+#social {
+padding-top: 25px;
+
+}
+
+#aboutme h2 {
+  padding: 10px;
+  padding-top: 50px;
+}
+
+#aboutme p {
+  padding-left: 5px;
+  max-width: 2000px;
+}
+
+#aboutme h3 {
+  padding-left: 25px
+}
+
+#aboutme ul {
+  padding-left: 50px;
+  max-width: 500px;
+}
+
+/* Project Pages */
+
+#project h1, h2, h3, h4, ul {
+  padding-left: 20px;
+
+}
+
+#project h1, h2 {
+  padding-top: 100px;
+}
+
+#project picture {
+  align-content: center;
+  max-width: 100%;
+}
+
+p {
+  padding-left: 20px;
 }
