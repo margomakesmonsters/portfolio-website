@@ -1,8 +1,4 @@
-/*
-colors used:
-Primary color (dark purple): #1D023D
-Secondary color (light purple): #9075A9
-*/
+/* colors used: Primary color (dark purple): #1D023D Secondary color (light purple): #9075A9 */
 * {
   box-sizing: border-box;
 }
@@ -14,7 +10,6 @@ body {
   line-height: 1.6;
   color: #1D023D;
 }
-
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -38,7 +33,6 @@ p, ul {
   font-size: 1em;
   font-weight: 300;
 }
-
 span {
   font-size: 2em;
   font-weight: 600;
@@ -46,7 +40,6 @@ span {
 img {
   width: 100%;
 }
-
 a {
   color: #9075A9;
   text-decoration: none;
@@ -82,7 +75,6 @@ a:hover, a:focus {
   opacity: 0.8;
   text-decoration: none;
 }
-
 .button.contact {
   background-color: transparent;
   color: #9075A9;
@@ -93,83 +85,69 @@ a:hover, a:focus {
   background-color: #9075A9;
   color: #ffffff;
 }
-
-
-
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+ /* 25px top and bottom, 0 left and right */
 }
-
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #1D023D;
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #1D023D;
 }
-
 .logo {
   max-width: 150px;
 }
-
 header {
   text-align: center;
   padding: 10px 0;
   width: 100%;
   position: relative;
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
-  }
-
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
-
 nav > ul > li {
   display: inline-block;
 }
 nav > ul > li > a:visited {
- color: #53376E;
+  color: #53376E;
 }
 nav > ul > li > a:hover {
   color: #795B96;
- }
- nav > ul > li > a:active {
+}
+nav > ul > li > a:active {
   color: #795B96;
- }
-
+}
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #1D023D
+  color: #1D023D 
 }
-
 #navigation {
   display: inline-block;
   width: 100%;
 }
-
 #hero h1 {
   margin: 0;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
-
 #hero {
   background-color: #dac9eb;
   padding: 20px 0;
   text-align: center;
 }
-
-
 #hero span {
   text-align: center;
   display: block;
 }
-
-
 .mypicture {
   display: block;
   margin-top: 100px;
@@ -179,29 +157,33 @@ nav > ul > li > a {
   max-height: 50%;
   border-radius: 25px;
 }
-
 .resumebutton {
-  justify-content: center;
+  display: inline-block;
   background-color: #dac9eb;
-  color: #dac9eb;
-  text-transform: uppercase;
-  padding: 10px, 20px;
-  border-radius: 20px;
-  border: 2px solid #dac9eb;
-  margin-top: 20px;
-}
-
-.resumebutton {
+  color: #1D023D;
+  font-weight: 300;
   padding: 10px;
-  border-radius: 20px;
-  color: #dac9eb;
-  margin-top: 20px;
+  border-radius: 15px;
+  border-bottom: 2px solid #53376E;
+  transition: 0.2s opacity;
 }
-
-
-#social {
-padding-top: 25px;
-text-align: center;
+.resuemebutton:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.resumebutton.contact {
+  background-color: transparent;
+  color: #9075A9;
+  text-transform: uppercase;
+  border: 2px solid #9075A9;
+}
+.resumebutton.contact:hover {
+  background-color: #9075A9;
+  color: #ffffff;
+}
+  #social {
+  padding-top: 25px;
+  text-align: center;
 }
 #contact {
   align-content: center;
@@ -238,144 +220,119 @@ text-align: center;
   color: #dac9eb;
   margin-top: 20px;
 }
-
 #contact {
-padding-top: 50px; 
- text-align: center;
+  padding-top: 50px;
+  text-align: center;
 }
-
-
 /* Project Pages */
-
 #project h1, h2, h3, h4, ul {
   padding-left: 20px;
-
 }
-
 #project h1, h2 {
   padding-top: 100px;
 }
-
 #project picture {
   align-content: center;
   max-width: 100%;
 }
-
 p {
   padding-left: 20px;
 }
-
-
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
+/* ============================== Medium devices (640px and larger) ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
+      text-align: unset;
+      padding: 20px 0 13px;
+ }
   nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
+      width: auto;
+      float: right;
+      margin-top: 4px;
+ }
   .col-md-6 {
-    width: 50%;
-  }
+      width: 50%;
+ }
   [class*="col-"] {
-    float: left;
-    padding: 10px;
-
-  }
-
+      float: left;
+      padding: 10px;
+ }
   .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-
+      content: "";
+      clear: both;
+      display: table;
+ }
 }
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
+/* ============================== Large devices (1024px or larger) ================================= */
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+ }
   header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
+      text-align: unset;
+      padding: 20px 0 13px;
+ }
   nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
+      width: auto;
+      float: right;
+      margin-top: 4px;
+ }
   .col-lg-7 {
-    width: 50%;
-  }
+      width: 50%;
+ }
   .col-lg-5 {
-    width: 50%;
-  } 
-
+      width: 50%;
+ }
   [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
+      float: left;
+      padding: 10px;
+ }
   .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+      content: "";
+      clear: both;
+      display: table;
+ }
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
+/* ============================== X-large devices (1440px or larger) ================================= */
 @media only screen and (min-width: 1440px) {
 }
-
 /*animation*/
-
 #animation {
- width: 100%;
- max-width: 100%;
- height: auto;
-
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
-
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+     fill: #edc655;
+ }
+  to {
+     fill: #f76414;
+ }
 }
-
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
-
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+     transform: translate(0,50px);
+ }
+  to {
+     transform: translate(200px,50px);
+ }
 }
-
 .cloud-front {
   animation: 25s cloud-move infinite alternate linear;
 }
-
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+     transform: translate(446px,48px);
+ }
+  to {
+     transform: translate(100px, 48px);
+ }
 }
-
 .cloud-back {
   animation: 25s cloud-move-reverse infinite alternate linear;
 }
