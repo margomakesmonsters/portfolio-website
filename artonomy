@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>Artonomy</title>
+      <title>Margo Murrin UX/UI Designer</title>
       <link rel="stylesheet" type="text/css" 
          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,14 +15,14 @@
       <header>
          <div class="container">
             <a class="logo"><img src="img/etc/Logo.svg" class="logo" alt="Margo Murrin"> </a>
+            <nav>
+               <ul class="navigation">
+                  <li><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </nav>
          </div>
-         <nav>
-            <ul class="navigation">
-               <li><a href="index.html">Work</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="#contact">Contact</a></li>
-            </ul>
-         </nav>
       </header>
       <main>
          <div #id="project">
