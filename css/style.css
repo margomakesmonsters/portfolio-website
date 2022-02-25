@@ -173,7 +173,7 @@ nav > ul > li > a {
 }
 .resumebutton.contact {
   background-color: transparent;
-  color: #9075A9;
+  color: #1D023D;
   text-transform: uppercase;
   border: 2px solid #9075A9;
 }
@@ -254,7 +254,7 @@ p {
  }
   [class*="col-"] {
       float: left;
-      padding: 10px;
+      
  }
   .row::after {
       content: "";
@@ -278,21 +278,13 @@ p {
       float: right;
       margin-top: 4px;
  }
-  .col-lg-7 {
-      width: 50%;
- }
   .col-lg-5 {
-      width: 50%;
+      width: 30%;
  }
-  [class*="col-"] {
-      float: left;
-      padding: 10px;
- }
-  .row::after {
-      content: "";
-      clear: both;
-      display: table;
- }
+  .col-lg-7 {
+      width: 70%;
+}
+
 }
 /* ============================== X-large devices (1440px or larger) ================================= */
 @media only screen and (min-width: 1440px) {
@@ -335,4 +327,8 @@ p {
 }
 .cloud-back {
   animation: 25s cloud-move-reverse infinite alternate linear;
+}
+
+.descwrapper {
+  padding: 0px 20px;
 }
