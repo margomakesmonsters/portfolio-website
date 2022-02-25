@@ -101,8 +101,8 @@ a:hover, a:focus {
   max-width: 150px;
 }
 header {
-  text-align: center;
-  padding: 10px 0;
+  
+  padding: 10px 0 4px;
   width: 100%;
   position: relative;
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
@@ -110,10 +110,9 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a:visited {
   color: #53376E;
 }
@@ -128,10 +127,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 400;
   color: #1D023D 
-}
-#navigation {
-  display: inline-block;
-  width: 100%;
+
 }
 #hero h1 {
   margin: 0;
@@ -244,6 +240,19 @@ p {
       text-align: unset;
       padding: 20px 0 13px;
  }
+ .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
+ nav > ul > li {
+  display: inline-block;
+  min-width: 641px;
+}
   nav {
       width: auto;
       float: right;
@@ -331,4 +340,30 @@ p {
 
 .descwrapper {
   padding: 0px 20px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding 10px 0;
+  border-top: 1px solid #1D023D
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
