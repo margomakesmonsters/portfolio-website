@@ -129,6 +129,37 @@ nav > ul > li > a {
   color: #1D023D 
 
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* our hamburger menu */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #1D023D;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+} 
+
 #hero h1 {
   margin: 0;
   padding: 20px 0;
@@ -220,6 +251,8 @@ nav > ul > li > a {
   padding-top: 50px;
   text-align: center;
 }
+
+
 /* Project Pages */
 #project h1, h2, h3, h4, ul {
   padding-left: 20px;
@@ -240,12 +273,7 @@ p {
       text-align: unset;
       padding: 20px 0 13px;
  }
- .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
+
 nav > ul {
   margin: 1em 0;
 }
@@ -270,6 +298,13 @@ nav > ul {
       clear: both;
       display: table;
  }
+ .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 }
 /* ============================== Large devices (1024px or larger) ================================= */
 @media only screen and (min-width: 1024px) {
@@ -295,9 +330,7 @@ nav > ul {
 }
 
 }
-/* ============================== X-large devices (1440px or larger) ================================= */
-@media only screen and (min-width: 1440px) {
-}
+
 /*animation*/
 #animation {
   width: 100%;
@@ -338,32 +371,11 @@ nav > ul {
   animation: 25s cloud-move-reverse infinite alternate linear;
 }
 
+
+
 .descwrapper {
   padding: 0px 20px;
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
 
-.navtoggle.responsive li  {
-  display: block;
-  padding 10px 0;
-  border-top: 1px solid #1D023D
-}
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
+
