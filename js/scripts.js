@@ -1,5 +1,5 @@
 function menuToggle() {
-    var x = document.getElementById('myNavtoggle');
+    var x = document.getElementById('mynavtoggle');
     if (x.className === 'navtoggle') {
       x.className += ' responsive';
     } else {

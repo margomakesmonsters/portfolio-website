@@ -103,16 +103,35 @@ a:hover, a:focus {
 header {
   
   padding: 10px 0 4px;
+  text-align: center;
   width: 100%;
   position: relative;
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
 }
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #1D023D;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 nav > ul > li > a:visited {
   color: #53376E;
 }
@@ -122,13 +141,7 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color: #795B96;
 }
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #1D023D 
 
-}
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -274,18 +287,16 @@ p {
       padding: 20px 0 13px;
  }
 
-nav > ul {
-  margin: 1em 0;
+ nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
 }
- nav > ul > li {
+
+nav > ul > li {
   display: inline-block;
-  min-width: 641px;
+  position: relative;
 }
-  nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
- }
   .col-md-6 {
       width: 50%;
  }
