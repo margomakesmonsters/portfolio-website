@@ -12,18 +12,21 @@ body {
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
+  letter-spacing: 2px; 
 }
 h1 {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 800; 
 }
 h2 {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1.75em;
+  font-weight: 800;
+  text-align: center; 
 }
 h3 {
   font-size: 1.25em;
   font-weight: 500;
+  
 }
 h4 {
   font-size: 1em;
@@ -33,17 +36,21 @@ p, ul {
   font-size: 1em;
   font-weight: 300;
 }
+
 span {
   font-size: 2em;
   font-weight: 600;
 }
 img {
-  width: 100%;
+  max-width: 100%;
+  padding-top: 20px;
+
 }
 a {
   color: #9075A9;
   text-decoration: none;
 }
+
 a:hover {
   color: #53376E;
   text-decoration: underline;
@@ -77,7 +84,7 @@ a:hover, a:focus {
 }
 .button.contact {
   background-color: transparent;
-  color: #9075A9;
+  color: #1d023d;
   text-transform: uppercase;
   border: 2px solid #9075A9;
 }
@@ -98,26 +105,26 @@ a:hover, a:focus {
   border-bottom: 1px solid #1D023D;
 }
 .logo {
-  max-width: 150px;
+  max-width: 100px;
 }
 header {
-  
+  background-color: #dac9eb;
   padding: 10px 0 4px;
   text-align: center;
   width: 100%;
   position: relative;
-  box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow: 5px 5px 5px #a58dbb;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+
+#aboutme {
+  text-align: center;
 }
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
+.aboutme h2 {
+  padding-left: 50px;
 }
+
 
 nav > ul > li {
   display: inline-block;
@@ -129,6 +136,7 @@ nav > ul > li > a {
   display: inline-block;
   padding: 0 15px;
   color: #1D023D;
+  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -180,7 +188,7 @@ nav > ul > li > a:active {
   width: 100%;
 }
 #hero {
-  background-color: #dac9eb;
+  
   padding: 20px 0;
   text-align: center;
 }
@@ -188,15 +196,7 @@ nav > ul > li > a:active {
   text-align: center;
   display: block;
 }
-.mypicture {
-  display: block;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  max-height: 50%;
-  border-radius: 25px;
-}
+
 .resumebutton {
   display: inline-block;
   background-color: #dac9eb;
@@ -221,6 +221,8 @@ nav > ul > li > a:active {
   background-color: #9075A9;
   color: #ffffff;
 }
+
+
   #social {
   padding-top: 25px;
   text-align: center;
@@ -228,19 +230,17 @@ nav > ul > li > a:active {
 #contact {
   align-content: center;
 }
-#work {
-  padding-top: 25px;
-}
+
 #hero span {
   text-align: center;
   display: block;
 }
 .mypicture {
   display: block;
-  margin-top: 100px;
+  margin-top: 14px;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 300px;
   max-height: 50%;
   border-radius: 25px;
 }
@@ -252,34 +252,36 @@ nav > ul > li > a:active {
   padding: 10px, 20px;
   border-radius: 20px;
   border: 2px solid #dac9eb;
-  margin-top: 20px;
+  margin-top: 10px;
+  
 }
 .resumebutton {
   padding: 10px;
   border-radius: 20px;
-  color: #dac9eb;
-  margin-top: 20px;
+  color: #1d023d;
+  margin-top: 10px;
 }
 #contact {
-  padding-top: 50px;
+  background-image: linear-gradient(white,#dac9eb);
   text-align: center;
 }
 
 
+
+
+
 /* Project Pages */
 #project h1, h2, h3, h4, ul {
-  padding-left: 20px;
+  padding-left: 5px;
 }
 #project h1, h2 {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 #project picture {
   align-content: center;
   max-width: 100%;
 }
-p {
-  padding-left: 20px;
-}
+
 /* ============================== Medium devices (640px and larger) ================================= */
 @media only screen and (min-width: 640px) {
   header {
@@ -293,7 +295,7 @@ p {
   margin-top: 4px;
 }
 
-nav > ul > li {
+ nav > ul > li {
   display: inline-block;
   position: relative;
 }
@@ -313,8 +315,22 @@ nav > ul > li {
   display: inline-block;
 }
 
-.navtoggle li:last-child {
+ .navtoggle li:last-child {
   display: none;
+ }
+
+#skills {
+  padding-top: 10px;
+  padding-left: 400px;
+  text-align: center;
+ 
+  
+}
+
+#tools {
+  padding-top: 10px;
+  padding-right: 400px;
+  text-align: center;
 }
 }
 /* ============================== Large devices (1024px or larger) ================================= */
@@ -339,6 +355,10 @@ nav > ul > li {
   .col-lg-7 {
       width: 70%;
 }
+.col-lg-12 {
+  width: 100%;
+}
+
 
 }
 
@@ -385,8 +405,20 @@ nav > ul > li {
 
 
 .descwrapper {
-  padding: 0px 20px;
+  padding-right: 100px ;
+  padding-left: 20px;
 }
 
+
+#skills.tools {
+  text-align: center;
+}
+
+#skills ul {
+  list-style-type: none;
+}
+#tools ul {
+  list-style-type: none;
+}
 
 
