@@ -321,7 +321,7 @@ nav > ul > li > a:active {
 
 #skills {
   padding-top: 10px;
-  padding-left: 400px;
+  padding-left: 300px;
   text-align: center;
  
   
@@ -329,7 +329,7 @@ nav > ul > li > a:active {
 
 #tools {
   padding-top: 10px;
-  padding-right: 400px;
+  padding-right: 300px;
   text-align: center;
 }
 }
@@ -415,9 +415,11 @@ nav > ul > li > a:active {
 }
 
 #skills ul {
+  margin-right: 5px;
   list-style-type: none;
 }
 #tools ul {
+  margin-left: 5px;
   list-style-type: none;
 }
 
